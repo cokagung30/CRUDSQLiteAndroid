@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrainingCRUDSqlite</string>
+
+    <string name="edt_nama_title">Nama Anda</string>
+    <string name="edt_umur_title">Umur Anda</string>
+    <string name="edt_no_telp_title">No Telp Anda</string>
+    <string name="edt_alamat_title">Alamat Anda</string>
+    <string name="btn_submit_biodata_title">Submit</string>
+</resources>
