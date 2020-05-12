@@ -1,5 +1,6 @@
 package com.baliwork.trainingcrudsqlite.sqlite.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -19,5 +20,6 @@ interface BiodataDao {
 
     //Untuk mengambil data yang berada pada Tabel Biodata
     @Query("Select * from Biodatas")
-    fun fetchBiodata() : List<Biodata>
+    fun fetchBiodata() : LiveData<List<Biodata>>
+
 }
