@@ -16,10 +16,14 @@ interface BiodataDao {
 
     //Untuk memperbaharui Biodata User
     @Query("Update Biodatas Set nama=:namaBaru Where idUser=:id")
-    fun updatBiodata(namaBaru: String, id: Int)
+    fun updatBiodata(namaBaru: String, id: Int?)
 
     //Untuk mengambil data yang berada pada Tabel Biodata
     @Query("Select * from Biodatas")
     fun fetchBiodata() : LiveData<List<Biodata>>
+
+    //Untuk Menghapus data Biodata
+    @Query("Delete From Biodatas Where idUser=:id")
+    fun deleteBiodata(id: Int)
 
 }
