@@ -8,8 +8,9 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scv_1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scrollbars="vertical">
 
         <LinearLayout
@@ -60,5 +61,14 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_biodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scv_1"
+        android:layout_margin="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_biodata"/>
 
 </RelativeLayout>
